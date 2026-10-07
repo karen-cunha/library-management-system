@@ -1,0 +1,27 @@
+--Administrator and two librarians
+INSERT INTO users (username, email, password) VALUES
+('admin_master', 'admin@library.com', 'password123'),
+('lib_marta', 'marta@library.com', 'password123'),
+('lib_joao', 'joao@library.com', 'password123');
+
+--User roles using IDs 1, 2 and 3.
+INSERT INTO administrator (user_id) VALUES (1);
+INSERT INTO librarian (user_id) VALUES (2);
+INSERT INTO librarian (user_id) VALUES (3);
+
+--10 genres
+INSERT INTO genres (name) VALUES
+('Science Fiction'), 
+('Fantasy'), 
+('Mystery'), 
+('History'), 
+('Romance'),
+('Horror'), 
+('Data Science'), 
+('Biography'), 
+('Literature'), 
+('Novels');
+
+--Authors
+INSERT INTO authors (name) VALUES
+('Isaac Asimov'), ('Agatha Christie'), ('Stephen King'), ('J.K. Rowling'), ('Alan Turing');
